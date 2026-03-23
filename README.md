@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://github.com/omagebright/nmrmetaproc)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.19194107)
 
 **NMR Metabolomics Spectral Processor**
 
@@ -45,7 +45,7 @@ pip install nmrmetaproc
 Or from source:
 
 ```bash
-git clone https://github.com/omagebright/nmrmetaproc.git
+git clone https://doi.org/10.5281/zenodo.19194107.git
 cd nmrmetaproc
 pip install -e .
 ```
@@ -148,7 +148,7 @@ If you use `nmrmetaproc` in your research, please cite:
 
 ```
 Omage, F. B. (2026). nmrmetaproc: NMR Metabolomics Spectral Processor (Version 1.0.0).
-GitHub. https://github.com/omagebright/nmrmetaproc
+Zenodo. https://doi.org/10.5281/zenodo.19194107
 ```
 
 The PQN normalization method:
@@ -162,7 +162,7 @@ The PQN normalization method:
 ## Development
 
 ```bash
-git clone https://github.com/omagebright/nmrmetaproc.git
+git clone https://doi.org/10.5281/zenodo.19194107.git
 cd nmrmetaproc
 pip install -e ".[dev]"
 pytest tests/ -v
