@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://github.com/omagebright/nmrmetaproc)
 
 **NMR Metabolomics Spectral Processor**
 
@@ -148,7 +148,7 @@ If you use `nmrmetaproc` in your research, please cite:
 
 ```
 Omage, F. B. (2026). nmrmetaproc: NMR Metabolomics Spectral Processor (Version 1.0.0).
-Zenodo. https://doi.org/10.5281/zenodo.XXXXXXX
+GitHub. https://github.com/omagebright/nmrmetaproc
 ```
 
 The PQN normalization method:
