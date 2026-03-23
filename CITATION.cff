@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "nmrmetaproc: NMR Metabolomics Spectral Processor"
+abstract: >
+  A Python package and command-line tool for processing raw Bruker NMR FID files
+  into analysis-ready spectral matrices for metabolomics studies. Implements a
+  full pipeline including apodization, FFT, automatic phase correction, chemical-shift
+  referencing to TSP, asymmetric least-squares baseline correction, spectral alignment,
+  and Probabilistic Quotient Normalization (PQN).
+authors:
+  - family-names: "Omage"
+    given-names: "Folorunsho Bright"
+    orcid: "https://orcid.org/0000-0002-9750-5034"
+    email: "omagefolorunsho@gmail.com"
+version: "1.0.0"
+date-released: "2026-03-23"
+license: MIT
+repository-code: "https://github.com/omagebright/nmrmetaproc"
+url: "https://github.com/omagebright/nmrmetaproc"
+doi: "10.5281/zenodo.XXXXXXX"
+keywords:
+  - NMR
+  - metabolomics
+  - spectral processing
+  - chemometrics
+  - Bruker
+  - bioinformatics
+  - probabilistic quotient normalization
+  - phase correction
+  - baseline correction
+references:
+  - type: article
+    title: "Probabilistic quotient normalization as robust method to account for dilution of complex biological mixtures"
+    authors:
+      - family-names: "Dieterle"
+        given-names: "F."
+      - family-names: "Ross"
+        given-names: "A."
+      - family-names: "Schlotterbeck"
+        given-names: "G."
+      - family-names: "Senn"
+        given-names: "H."
+    journal: "Analytical Chemistry"
+    year: 2006
+    volume: 78
+    issue: 13
+    start: 4281
+    end: 4290
+    doi: "10.1021/ac051632c"
