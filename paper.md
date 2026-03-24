@@ -16,6 +16,7 @@ authors:
     affiliation: 1
   - name: Ljubica Tasic
     orcid: 0000-0003-3002-3796
+    corresponding: true
     affiliation: 1
 affiliations:
   - name: Institute of Chemistry, University of Campinas (UNICAMP), Campinas, SP, Brazil
