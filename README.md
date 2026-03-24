@@ -165,7 +165,7 @@ Nested layouts are also supported and discovered automatically.
 If you use `nmrmetaproc` in your research, please cite:
 
 ```
-Omage, F. B. (2026). nmrmetaproc: NMR Metabolomics Spectral Processor (Version 1.0.0).
+Omage, F. B., Omage, T. B., & Tasic, L. (2026). nmrmetaproc: NMR Metabolomics Spectral Processor (Version 1.0.0).
 Zenodo. https://doi.org/10.5281/zenodo.19194107
 ```
 
