@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+﻿cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 type: software
 title: "nmrmetaproc: NMR Metabolomics Spectral Processor"
@@ -13,6 +13,11 @@ authors:
     given-names: "Folorunsho Bright"
     orcid: "https://orcid.org/0000-0002-9750-5034"
     email: "omagefolorunsho@gmail.com"
+  - family-names: "Omage"
+    given-names: "Toyin Bright"
+  - family-names: "Tasic"
+    given-names: "Ljubica"
+    orcid: "https://orcid.org/0000-0003-3002-3796"
 version: "1.0.0"
 date-released: "2026-03-23"
 license: MIT
@@ -48,3 +53,4 @@ references:
     start: 4281
     end: 4290
     doi: "10.1021/ac051632c"
+
