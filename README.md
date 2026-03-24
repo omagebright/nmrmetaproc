@@ -1,8 +1,8 @@
-# nmrmetaproc
+﻿# nmrmetaproc
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.19194107)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19194107.svg)](https://doi.org/10.5281/zenodo.19194107)
 
 **NMR Metabolomics Spectral Processor**
 
@@ -173,3 +173,4 @@ pytest tests/ -v
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
