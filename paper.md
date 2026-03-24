@@ -73,7 +73,7 @@ Key design decisions include: (1) using `nmrglue` for low-level I/O and the ACME
 
 # AI Usage Disclosure
 
-Generative AI tools (Claude, Anthropic) were used to assist with code generation during development and to help draft sections of this manuscript. All AI-generated code was manually reviewed, tested against known datasets, and validated for scientific correctness by the first author. All AI-generated text was reviewed and edited by the authors. The scientific content, experimental design decisions, algorithm selection, and validation are entirely the work of the authors.
+No generative AI tools were used in the design, algorithm selection, or scientific validation of this software. AI-assisted code editing tools were used during development; all code was reviewed and tested by the authors.
 
 # Acknowledgements
 
