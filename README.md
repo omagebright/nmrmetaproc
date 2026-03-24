@@ -54,6 +54,24 @@ pip install -e .
 
 ---
 
+---
+
+## 🚀 Try it Now - Interactive Demo
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/omagebright/nmrmetaproc/blob/main/examples/colab_demo_real_data.ipynb)
+
+**Try nmrmetaproc instantly** with real de-identified clinical NMR data from a thrombosis study! The interactive Google Colab notebook demonstrates the complete workflow from raw Bruker FID files to publication-quality figures and statistical analysis.
+
+**Demo features:**
+- Process 6 real NMR samples (3 Control + 3 Thrombosis) 
+- 600 MHz Bruker AVANCE III data
+- Quality control visualization
+- Group comparison plots  
+- Principal component analysis
+- Zero installation required - runs in your browser!
+
+[**Launch Demo →**](https://colab.research.google.com/github/omagebright/nmrmetaproc/blob/main/examples/colab_demo_real_data.ipynb)
+
 ## Command-Line Usage
 
 ### Full Processing Pipeline
