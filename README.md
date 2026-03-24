@@ -8,7 +8,7 @@
 
 `nmrmetaproc` converts raw Bruker NMR FID files into clean, analysis-ready spectral matrices (CSV format) suitable for PCA, PLS-DA, pathway analysis, and other downstream metabolomics workflows. It implements a rigorous, reproducible processing pipeline with automatic phase correction, chemical-shift referencing, robust baseline correction, spectral alignment, and Probabilistic Quotient Normalization (PQN).
 
-**Author:** Folorunsho Bright Omage, Ph.D.
+**Authors:** Folorunsho Bright Omage, Toyin Bright Omage, Ljubica Tasic
 **ORCID:** [0000-0002-9750-5034](https://orcid.org/0000-0002-9750-5034)
 **Email:** omagefolorunsho@gmail.com
 
@@ -191,4 +191,5 @@ pytest tests/ -v
 ## License
 
 MIT License. See [LICENSE](LICENSE) for details.
+
 
