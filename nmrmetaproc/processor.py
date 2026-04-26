@@ -121,7 +121,7 @@ class NMRProcessor:
         snr_threshold: float = 10.0,
         linewidth_threshold: float = 2.5,
         align: Optional[str] = "icoshift",
-        als_lam: float = 1e5,
+        als_lam: float = 1e9,
         als_p: float = 0.01,
     ) -> None:
         self.lb = lb

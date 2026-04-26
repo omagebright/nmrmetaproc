@@ -96,7 +96,7 @@ def zero_fill(fid: np.ndarray, factor: int = 2) -> np.ndarray:
 # ---------------------------------------------------------------------------
 
 def fourier_transform(fid: np.ndarray) -> np.ndarray:
-    """Apply FFT and shift zero-frequency component to center.
+    """Apply FFT, shift, and reverse to Bruker convention.
 
     Parameters
     ----------
@@ -107,9 +107,16 @@ def fourier_transform(fid: np.ndarray) -> np.ndarray:
     -------
     np.ndarray
         Complex frequency-domain spectrum (real part is the absorption signal).
+        Index 0 corresponds to HIGH ppm (downfield), matching the descending
+        ppm axis built by :func:`build_ppm_axis` and the standard NMR display
+        convention.  Without the final reversal the spectrum is left-right
+        flipped relative to its ppm labels.
     """
     spectrum = np.fft.fftshift(np.fft.fft(fid))
-    return spectrum
+    # Bruker convention: high ppm on the left.  np.fft.fftshift puts the
+    # most negative frequency at index 0 (i.e. low ppm), opposite of what
+    # build_ppm_axis assumes.  Reverse so that index 0 == high ppm.
+    return spectrum[::-1]
 
 
 def build_ppm_axis(params: dict, n_points: int) -> np.ndarray:
@@ -214,7 +221,7 @@ def reference_to_tsp(
 
 def baseline_als(
     spectrum: np.ndarray,
-    lam: float = 1e5,
+    lam: float = 1e9,
     p: float = 0.01,
     max_iter: int = 10,
 ) -> np.ndarray:

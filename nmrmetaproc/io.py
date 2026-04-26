@@ -12,6 +12,11 @@ from typing import Any, Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
+try:
+    import nmrglue as ng
+except ImportError as exc:  # nmrglue is declared in pyproject.toml
+    raise ImportError("nmrglue is required: pip install nmrglue") from exc
+
 logger = logging.getLogger(__name__)
 
 
@@ -145,6 +150,20 @@ def read_fid(sample_dir: Path) -> Tuple[np.ndarray, Dict[str, Any]]:
     if len(raw) % 2 != 0:
         raw = raw[:-1]
     fid = raw[0::2] + 1j * raw[1::2]
+
+    # Remove Bruker digital-filter group delay. Without this step, modern Bruker
+    # FIDs (DSPFVS=10..21) produce a phase ramp across the spectrum after FFT,
+    # creating a phantom intensity ridge near one edge that dominates the bin
+    # table.  nmrglue.bruker.remove_digital_filter handles all DSPFVS variants.
+    grpdly = params.get("GRPDLY")
+    decim = params.get("DECIM")
+    dspfvs = params.get("DSPFVS")
+    if grpdly is not None and float(grpdly) > 0:
+        ng_dic = {"acqus": {"GRPDLY": grpdly, "DECIM": decim, "DSPFVS": dspfvs}}
+        try:
+            fid = ng.bruker.remove_digital_filter(ng_dic, fid)
+        except Exception as exc:  # noqa: BLE001 — fall back so non-Bruker FIDs still work
+            logger.warning("remove_digital_filter failed (%s); using raw FID.", exc)
 
     return fid, params
 
